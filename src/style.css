@@ -1,0 +1,45 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+body {
+    background: #111;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 15px;
+    background: #150050;
+    border-radius: 10px;
+}
+
+.combobox, .button {
+    display: block;
+    width: 230px;
+    font-size: 16px;
+    padding: 7px;
+    margin: 10px 0px;
+    border-radius: 5px;
+    color: #000;
+}
+
+.button {
+    background: #610094;
+    border: 1px solid #3F0071;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 550;
+    padding: 10px 0px;
+}
+
+.button:active {
+    box-shadow: 2px 2px 0px 1px #333;
+}
