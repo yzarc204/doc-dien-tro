@@ -1,12 +1,14 @@
 function BindingData()
 {
     let optsHTML = '';
-    for (let i = 0; i < opts.length; i++) {
+    for (let i = 1; i < opts.length; i++) {
         let option = `<option value='${i}'>${opts[i].color}</option>`;
         optsHTML += option;
     }
-    for (let box of boxs)
-        box.innerHTML = optsHTML;
+    for (let i = 0; i < boxs.length; i++) {
+        let circleCaption = '<option value="0">Vòng ' + (i+1) + '</option>';
+        boxs[i].innerHTML = circleCaption + optsHTML;
+    }
 }
 
 function CountCircle(values = [])
